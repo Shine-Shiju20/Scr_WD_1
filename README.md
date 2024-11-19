@@ -14,3 +14,6 @@ This is a basic implementation. Feel free to explore adding features.
 
 Author- SHINE SHIJU 
 shineshiju2005@gmail.com 
+
+![Responsive 2](https://github.com/user-attachments/assets/d6f72311-a01d-4b36-aeec-4d4d964f0cb2)
+![Responsive 1](https://github.com/user-attachments/assets/a61844e0-a2c7-44c8-bcd8-ff02b0ec4b60)
