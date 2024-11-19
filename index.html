@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Haven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Plant Haven</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Bring Nature Home</h2>
+            <p>Discover a wide range of indoor and outdoor plants that will brighten your space and purify your air.</p>
+            <a href="#shop" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                At Plant Haven, we believe in the power of plants to transform spaces and uplift moods. 
+                Our mission is to bring nature closer to you with a wide selection of healthy, vibrant plants. 
+                Whether you're looking for air-purifying indoor plants or stunning outdoor greenery, we've got you covered.
+            </p>
+        </div>
+    </section>
+
+    <!-- Featured Plants Section -->
+    <section id="shop" class="featured-plants">
+        <div class="container">
+            <h2>Featured Plants</h2>
+            <div class="plants-grid">
+                <div class="plant">
+                    <img src="img/img1.webp" alt="Plant 1">
+                    <h3>Fiddle Leaf Fig</h3>
+                    <p>₹999</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="plant">
+                    <img src="img/img2.jpg" alt="Plant 2">
+                    <h3>Snake Plant</h3>
+                    <p>₹499</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="plant">
+                    <img src="img/img3.jpg" alt="Plant 3">
+                    <h3>Peace Lily</h3>
+                    <p>₹799</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="plant">
+                    <img src="img/img4.jpg" alt="Plant 4">
+                    <h3>Succulent Set</h3>
+                    <p>₹599</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Plant Haven. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add to Cart Functionality
+        const cart = [];
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const plantName = button.parentElement.querySelector('h3').textContent;
+                const plantPrice = button.parentElement.querySelector('p').textContent;
+                cart.push({ name: plantName, price: plantPrice });
+                alert(`${plantName} has been added to your cart!`);
+                console.log(cart); // To see the current cart contents in the console
+            });
+        });
+    </script>
+</body>
+</html>
