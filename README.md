@@ -12,6 +12,8 @@ HTML CSS JavaScript
 Further Development:
 This is a basic implementation. Feel free to explore adding features.
 
+LinkedIn: https://www.linkedin.com/posts/shine-shiju-821652256_skillcrafttechnology-activity-7264701244227612673-AHTm?utm_source=share&
+
 Author- SHINE SHIJU 
 shineshiju2005@gmail.com 
 
